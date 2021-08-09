@@ -1,0 +1,209 @@
+*{
+    padding: 10;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:white;
+    font-family: 'Open sans', sans-serif;
+}
+
+head{
+    text-align: center;
+}
+.container{
+    background-color: aqua;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 30px;
+    
+}
+.item-restaurant{
+    text-align: center;
+    background: red;
+
+}
+.item-restaurant img{
+    width: 350px;
+}
+.item{
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .095);
+    transform: all 400ms;
+    width: auto;
+    position:static;
+
+
+}
+.item-general{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.item::after{
+    content: "";
+    background-color: rgba(179, 229, 252, .1);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all 400ms;
+    opacity: 0;
+}
+.item:hover{
+transform: scale(1.85);
+}
+.item:hover::after{
+    opacity:1;
+    transform: scale(1);
+}
+
+.item-text{
+    background-color: white;
+    color: black;
+    padding:lem;
+}
+.item-img{
+    max-width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+@media screen and (min-width:100px){
+    .container{
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+}
+@media screen and (min-width:400px){
+    .container{
+        grid-template-columns: repeat(2, ifr);
+    }
+}
+footer, header{
+    background-color:black;
+    color: white;
+}
+header h2{
+    text-align: center;
+}
+footer{
+    color: white;
+    text-align: right;
+    padding: 15px;
+}
+
+.menu{
+    list-style: none;
+    padding: 5;
+    background: #092327;
+    width: 100%;
+    margin:auto;
+    text-align: right;
+}
+
+nav li{
+    margin-right: center;
+    display: inline-block;
+
+
+}
+
+
+
+nav ul li a{
+    color: rgb(236, 236, 236);
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+
+
+
+}
+li a:hover{
+    background:tomato;
+    color: black;
+}
+
+.text{
+    text-align: justify;
+}
+.item-texto{
+    background: aqua;
+
+}
+.item-texto img{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+
+    
+}
+.titulo{
+    text-align: center;
+}
+.login{
+    background: #246e8b;
+}
+
+form{
+    width: 350px;
+    height: 350px;
+    background: #4e4d4d;
+    margin: auto;
+    margin-top: 190px;
+    box-shadow: 7px 13px 37px #000;
+    padding: 20px 50px;
+    border-top: 4px solid#017bab;
+    color: white;
+
+}
+
+.form-login h5{
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 20px;
+}
+.controls{
+    width: 100%;
+    border: 1px solid #017bab;
+    margin-bottom: 15px;
+    background: #252323;
+    font-size: 14px;
+    font-weight: bold;
+}
+.buttons{
+    width: 100%;
+    height: 40px;
+    background: #017bab;
+    border: none;
+    color: white;
+    margin-bottom: 16px;
+}
+.form-login p{
+    height: 40px;
+    text-align: center;
+    border-bottom: 1px solid;
+}
+.form-login a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.form-login a:hover{
+    text-decoration: underline;
+}
+.titulo-bienvenida{
+    padding: 15px;
+}
